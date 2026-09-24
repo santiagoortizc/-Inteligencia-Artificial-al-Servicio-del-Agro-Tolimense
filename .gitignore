@@ -1,0 +1,45 @@
+# ============================
+# Python / herramientas
+# ============================
+__pycache__/
+*.pyc
+*.pyo
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# ============================
+# Entornos virtuales
+# ============================
+venv/
+.venv/
+env/
+
+# ============================
+# Datos e imagenes
+# ============================
+Insectos/
+dataset/
+
+# ============================
+# Modelos entrenados y backups
+# ============================
+models/
+models_backup_*/
+*.h5
+*.keras
+
+# ============================
+# Credenciales / configuracion local
+# ============================
+.env
+*.key
+
+# ============================
+# Sistema operativo / editor
+# ============================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
