@@ -2,9 +2,12 @@
 # Universidad Cooperativa de Colombia - Semillero DataTech
 #
 # Instalar con: pip install -r requirements.txt
+# (o con uv: uv pip install -r requirements.txt)
 
 # Core ML/DL
-tensorflow>=2.15.0
+# En WSL2 con GPU NVIDIA, el extra [and-cuda] instala las librerias CUDA/cuDNN
+# necesarias como paquetes de pip -- no reemplazar por 'tensorflow' a secas.
+tensorflow[and-cuda]>=2.15.0
 keras>=3.0.0
 
 # Procesamiento de imágenes
@@ -33,6 +36,5 @@ ipykernel>=6.25.0
 tqdm>=4.65.0
 python-dotenv>=1.0.0
 
-# Opcional: Aceleración GPU (descomentar según sistema)
+# Opcional: Aceleración GPU en Mac (no aplica a WSL/Linux)
 # tensorflow-metal>=1.0.0  # Para Mac M1/M2/M3
-# tensorflow[and-cuda]>=2.15.0  # Para NVIDIA CUDA

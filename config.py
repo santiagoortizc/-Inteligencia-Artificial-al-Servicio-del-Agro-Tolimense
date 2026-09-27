@@ -166,7 +166,7 @@ MODEL_CONFIG = {
     "dropout_rate": 0.3,
     "activation": "relu",
     # Entrenamiento
-    "batch_size": 32,
+    "batch_size": 16,
     "epochs": 50,
     "initial_learning_rate": 1e-4,
     "min_learning_rate": 1e-7,
